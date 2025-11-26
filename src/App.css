@@ -1,0 +1,70 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: var(--spacing-xl);
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-md);
+  background: linear-gradient(
+    to right,
+    var(--color-primary),
+    var(--color-primary-hover)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.app-header p {
+  color: var(--color-text-secondary);
+  font-size: 1.1rem;
+}
+
+.app-main {
+  max-width: 600px;
+  padding: var(--spacing-xl);
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 6px var(--color-shadow);
+}
+
+.app-main p {
+  margin-bottom: var(--spacing-md);
+  font-weight: 600;
+}
+
+.app-main ul {
+  list-style: none;
+  padding: 0;
+}
+
+.app-main li {
+  padding: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+  background-color: var(--color-border);
+  border-radius: calc(var(--border-radius) / 2);
+  transition: var(--transition);
+}
+
+.app-main li:hover {
+  transform: translateX(4px);
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.app-example {
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-xl);
+  border-top: 1px solid var(--color-border);
+}
